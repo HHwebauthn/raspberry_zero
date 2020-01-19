@@ -32,6 +32,12 @@ I had to reboot my raspberry pi to get network manager to display information us
 my .py file requieres network manager to be installed and working correctly and it need to have 'service bluetooth start' on so the bash file can run 'hcitool -i hci0 scan'
 to scan for blue tooth devices.
 
+I could not get network manager to display any information when I used 'nmcli dev wifi'
+I had to install wicd 
+sudo apt-get install wicd
+the only problem is the with both nmcli and wicd installed 
+you cant connect to the WIFI
+but network manager displays the information I was looking for
 
 change things as you wish.
 
